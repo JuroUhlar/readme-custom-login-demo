@@ -2,13 +2,16 @@
   "openapi": "3.0.0",
   "servers": [
     {
-      "url": "https://{baseUrl}",
-      "variables": {
-        "baseUrl": {
-          "default": "api.fpjs.io",
-          "enum": ["api.fpjs.io", "eu.api.fpjs.io", "ap.api.fpjs.io"]
-        }
-      }
+      "url": "https://api.fpjs.io",
+      "description": "Global"
+    },
+    {
+      "url": "https://eu.api.fpjs.io",
+      "description": "Europe"
+    },
+    {
+      "url": "https://ap.api.fpjs.io",
+      "description": "Asia Pacific"
     }
   ],
   "info": {
